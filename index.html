@@ -1,10 +1,3 @@
-<?php
-  $bg = array('fondos-01.jpg', 'fondos-02.jpg', 'fondos-03.jpg', 'fondos-04.jpg', 'fondos-05.jpg', 'fondos-06.jpg', 'fondos-07.jpg' ); // array of filenames
-
-  $i = rand(0, count($bg)-1); // generate random number size of the array
-  $selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
-?>
-
 <!DOCTYPE HTML>
 <!--
 	Dimension by HTML5 UP
@@ -19,14 +12,6 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
-		<style type="text/css">
-
-		#bg:after{
-			background-image: url(images/fotos/<?php echo $selectedBg; ?>);
-		}
-
-		</style>
 	</head>
 	<body>
 
@@ -49,6 +34,7 @@
 							<ul>
 								<li><a href="#nosotros">Nosotros</a></li>
 								<li><a href="#acciones">Acciones</a></li>
+								<li><a href="#proyectos">Proyectos</a></li>
 								<li><a href="#sumate">Sumate</a></li>
 								<li><a href="#contact">Contacto</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
@@ -63,28 +49,96 @@
 							<article id="nosotros">
 								<h2 class="major">Nosotros</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+								<p>Alma Verde es una ONG ambientalista que nació en la localidad de Monte Hermoso, ciudad situada al sur de la provincia de Buenos Aires, Argentina. <br>
+								Se constituyó como una Asociación Civil en el año 2014 y desde entonces dejó sentado en su estatuto los siguientes objetivos de trabajo:
+								</p>
+								<ol class="icons">
+									<li>Defender y promover la conservación del medio ambiente y difundir todas las actividades afines que se lleven a cabo tanto en nuestra localidad como en el resto del mundo.</li>
+									<li>Desarrollar el sentido de pertenencia para generar más consciencia ambiental en todos los habitantes del municipio.</li>
+									<li>Fomentar y obrar en diversas líneas de acción que contribuyan al cuidado del medio ambiente.</li>
+									<li>Apoyar y acompañar proyectos de educación ambiental.</li>
+								</ol>
 							</article>
 
 						<!-- Work -->
 							<article id="acciones">
-								<h2 class="major">Acciones y proyectos</h2>
+								<h2 class="major">Acciones</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<ol class="icons">
+									<li> <h3> EDUCACIÓN AMBIENTAL</h3>
+									<p>A través de la educación ambiental se busca promover la participación activa para la protección y mejoramiento del ambiente, potenciando la toma de decisiones responsables y comprometidas con el medio ambiente, fomentando el desarrollo del pensamiento crítico que nos permita pensar y actuar tanto local como globalmente en pos de un Desarrollo Sostenible.<br>
+									Entendemos que esta educación no es neutra, sino ideológica. Es un acto político, basado en valores para la transformación social. También consideramos que la misma debe tener una perspectiva holística, enfocando la relación entre el ser humano, la naturaleza y el universo de forma interdisciplinaria.<br>
+									La educación ambiental debe recuperar, reconocer, respetar, reflejar y utilizar la historia y la cultura de los pueblos originarios, para modificar los enfoques etnocéntricos. También debe ayudar a desarrollar una conciencia ética sobre todas las formas de vida con las cuales compartimos este planeta; respetar sus ciclos vitales e imponer límites a la explotación de esas formas de vida por parte de los seres humanos.</li>
+									</p>
+
+									<li><h3> CUIDADO DEL ENTORNO</h3>
+									<p>
+									Mediante diversas acciones fomentamos el cuidado del espacio y el medio ambiente que habitamos: la playa, el mar, los médanos, el pinar, los bosques, así como la totalidad del municipio.<br>
+									Desde el año 2014 venimos realizando distintas campañas y propuestas que invitan a la colaboración no solo a mantener el entorno limpio (“playa limpia”, “orillas sin colillas”), sino también a la separación de los residuos en origen.<br>
+									En lo que resta del año 2018 y con el foco puesto en el año entrante (2019) nos propusimos poder dar este gran paso: lograr entre todxs que en nuestra localidad se separen los residuos (Monte Separa), entendiendo a este como el paso previo para lograr una real activación del reciclado y de la planta de reciclado que tenemos en la localidad (Monte Recicla).<br>
+
+									Durante la temporada estival nos encontramos desarrollando las siguientes :
+										<ul>
+										<li>Concientizar sobre la importancia del cuidado de la playa, fomentando la separación de residuos en la playa.</li>
+										<li>Llevar a cabo la campaña “Orillas sin colillas” en conjunto con el Municipio de Monte Hermoso y diversas instituciones educativas de la localidad.</li>
+										<li>Colaborar para que los grandes generadores de residuos en playa, que son los paradores y chiringuitos pongan en marcha estrategias que lleven a mantener el espacio que habitan limpio, contribuyendo a la separación de residuos, a la campaña “orillas sin colillas” y cumpliendo con la ordenanza municipal que exige la no utilización de sorbetes plásticos.</li>
+										</ul>
+									</li>
+									</p>
+
+									<li><h3> MONITOREO Y PROMOCIÓN DE ORDENANZAS MUNICIPALES</h3>
+									<p>
+									El conocimiento de las ordenanzas municipales que involucran el cuidado del entorno y del medio ambiente nos permite tomar un rol activo, permitiendo interactuar de forma mancomunada con la Municipalidad en la puesta en marcha de dichas ordenanza, como actores involucrados en la difusión y la educación en torno a las mismas, permitiendo que toda la sociedad se haga eco de lo que se pretende hacer en torno a esta línea de acción.<br>
+									También desde aquí colaboramos en la presentación de ordenanzas nuevas y novedosas que nos permita replicar lo que vemos que se está haciendo bien en otras ciudades, así como la presentación de proyectos de cambios en ordenanzas pre- existentes.<br>
+									Como guardianes de la playa y del entorno que habitamos nos comprometemos a informar situaciones que reflejen un incumplimiento de dichas ordenanzas y leyes municipales.<br>
+									</p>
+									</li>
+								
+									<li><h3> ACOMPAÑAMIENTO EN EVENTOS</h3>
+									<p>
+									Monte Hermoso es una ciudad turística que durante todo el año lleva a cabo la organización de diversos tipos de eventos (deportivos, culturales, otros).<br>
+									Como ONG aprovechamos ese momento de encuentro para compartir, charlar, entregar bolsas de separación de residuos y para llevar a cabo otras acciones que contribuyan no solo con el cuidado del entorno durante el evento sino también en la toma de conciencia de la población en general.<br>
+									Estos espacios también sirven para la difusión y la comunicación de las acciones que a través de nuestra ONG venimos llevando a cabo.</li>
+									</p>
+									</ol>
+							</article>
+
+							<article id="proyectos">
+								<h2 class="major">Proyectos</h2>
+								<span class="image main"><img src="images/pic05.jpg" alt="" /></span>
+								<p>Alma Verde esta vinculado directamente con dos proyectos educativos en la naturaleza, que trabajan desde la primera línea de acción que tenemos como ONG: la EDUCACIÓN AMBIENTAL.<br> 
+								Estas propuestas permiten una real conexión con esa naturaleza y entorno que tanto pretendemos conocer y cuidar.<br>
+								Son experiencias que atraen una conciencia ambiental no solo en los niñxs y adolescentes que forman parte, sino también de las familias y de toda la comunidad.<br>
+								Estos son:
+								</p>
+								<h3>RONDA AL SOL</h3>
+								<p>Aprovechando el diverso y rico contexto natural de Monte Hermoso, “Ronda al Sol” brinda oportunidades educativas en la naturaleza a partir del juego libre no directivo y el aprendizaje autodirigido por parte de los propios/as niños/as. Su propuesta pedagógica, inspirada en el modelo internacional de las “Escuela Bosque” y las “Escuela Playa”, no tiene antecedentes en nuestra región y hacen de esta iniciativa un proyecto pionero en América Latina. Los niños/as de Ronda al Sol viven la naturaleza desde adentro, la biofilia “amor hacia lo vivo” es en ellos y ellas algo común. Es esa capacidad de maravillarnos por la vida que nos rodea, como una tendencia innata, presente genéticamente en los seres humanos debido a que toda nuestra evolución ocurrió en medio -y gracias a- la naturaleza. <a href="http://rondaalsol.org/" target="none"><blockquote>Conocer mas...</blockquote></a> 
+								</p>
+								<h3>ESCUELA DE MAR - SALVAMENTO JUNIOR</h3>
+								<p>La Escuela de mar, Salvamento Junior es una propuesta educativa de verano llevada a cabo por Guardavidas y Profesionales de la educación con experiencia en el mar y en deportes acuáticos.<br>
+								A través del entrenamiento y de la recreación en el mar y en la playa (natación, salvamento acuático, introducción al surf, primeros auxilios y RCP) se pretende que los niñxs y adolescentes adquieran los conocimientos de base que llevan a la formación de lo que puede ser un futuro profesional guardavidas.<br>
+								Esta es una propuesta que da herramientas para la vida, al estimular en los chicos y chicas todas aquellas habilidades que llevan a desenvolverse no solo resolviendo situaciones que implican el cuidado de uno y de otros, si no también al desarrollar virtudes como la cooperación, colaboración, compañerismo, entre otras.<br>
+								Este proyecto se complementa con las herramientas que nos brinda la educación ambiental, al desarrollar una conciencia ética y colectiva sobre todas las formas de vida con las cuales compartimos este planeta y la importancia de su cuidado. Partiendo desde un concepto de solidaridad, donde uno cuida al otro, juntos al grupo y todos al medio ambiente del que somos parte, tomando como eje la herramienta multiplicadora que nos da la educación entre pares, donde cada niño/a, cada joven, extiende la red. <a href="http://escuelademar.alma-verde.org/" target="none"><blockquote>Conocer mas...</blockquote></a> 
+								</p>
 							</article>
 
 						<!-- About -->
 							<article id="sumate">
 								<h2 class="major">Sumate</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<span class="image main"><img src="images/pic06.jpg" alt="" /></span>
+								<p>Nuestra ONG trabaja organizando grupos o círculos de trabajo vinculados a las cuatro líneas de acción:</p>
+								<ol>
+									<li>EDUCACIÓN AMBIENTAL</li>
+									<li>CUIDADO DEL ENTORNO</li>
+									<li>MONITOREO Y PROMOCIÓN DE ORDENANZAS MUNICIPALES</li>
+									<li>ACOMPAÑAMIENTO EN EVENTOS</li>
+								</ol>
+								<P>Nos encantaría sumar actores comprometidos a nuestros grupos de trabajo.<br> Si querés formar parte de alguna de nuestras líneas de acción podés completar el formulario en la sección contacto o enviarnos un mail a: <a href="mailto:info@alma-verde.org" target="none"><span class="label"></span><blockquote>info@alma-verde.org</blockquote></a></P> 
 							</article>
 
 						<!-- Contact -->
-							<article id="contacto">
-								<h2 class="major">Contact</h2>
+							<article id="contact">
+								<h2 class="major">Contacto</h2>
 								<form method="post" action="#">
 									<div class="field half first">
 										<label for="name">Name</label>
@@ -104,10 +158,8 @@
 									</ul>
 								</form>
 								<ul class="icons">
-									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a><contact/li>
-									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.facebook.com/almaverde.montehermoso/?ref=bookmarks" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/almaverdeongmh/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 								</ul>
 							</article>
 
